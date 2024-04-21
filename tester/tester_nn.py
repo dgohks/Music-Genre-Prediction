@@ -42,7 +42,8 @@ sclr = StandardScaler()
 features = pd.DataFrame(sclr.fit_transform(features), columns=features.columns)
 
 # Step 3: Load the keras model
-model = load_model('1000_model.keras')
+model = load_model('10000_model.keras')
+
 
 # Step 4: Use the model to predict the music genre
 predictions = model.predict(features)
